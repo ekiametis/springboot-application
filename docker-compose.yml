@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  stack:
+    driver: bridge
+
+services:
+  api:
+    image: emmanuelkiametis/springboot-application:1.0.0
+    networks:
+      - stack
+    depends_on:
+      - mongo
+    ports:
+      - '8080:8080'
+  mongo:
+    image: mongo:4.1
+    networks:
+      - stack
