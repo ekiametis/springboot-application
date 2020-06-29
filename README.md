@@ -44,7 +44,7 @@ You can see the specification when the server will running at `http(s)://<server
 
 To run this project you need to have installed:
 
-- JDK 1.8
+- JRE/JDK 1.8
 - Maven
 - Docker (only if you want)
 - docker-compose (only if you want)
